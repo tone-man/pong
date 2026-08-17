@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://capholwcf4565"]
+
+[node name="Scene" type="Node2D" unique_id=2143719045]
+
+[node name="LeftPaddle" type="Node2D" parent="." unique_id=2063614539]
+position = Vector2(70, 346)
+
+[node name="RightPaddle" type="Node2D" parent="." unique_id=731140547]
+position = Vector2(1096, 348)
+
+[node name="Ball" type="Node2D" parent="." unique_id=527015713]
+position = Vector2(567, 346)
