@@ -1,13 +1,21 @@
 [gd_scene format=3 uid="uid://capholwcf4565"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajmcq"]
+size = Vector2(12, 100)
+
 [node name="Scene" type="Node2D" unique_id=2143719045]
 
 [node name="LeftPaddle" type="Node2D" parent="." unique_id=2063614539]
 
-[node name="Polygon2D" type="Polygon2D" parent="LeftPaddle" unique_id=84677704]
-position = Vector2(285, 333)
-polygon = PackedVector2Array(16, -48.000004, 0, -48.000004, 0, 56.000008, 16, 56.000008)
-uv = PackedVector2Array(8, -48.000004, -16.000061, -48.000004, -16.000061, 56.000008, 8, 56.000008)
+[node name="CharacterBody2D" type="CharacterBody2D" parent="LeftPaddle" unique_id=462975935]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftPaddle/CharacterBody2D" unique_id=2053693775]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_ajmcq")
+
+[node name="Polygon2D" type="Polygon2D" parent="LeftPaddle" unique_id=1605474851]
+polygon = PackedVector2Array(0, -48, 0, 48, 8, 48, 8, -48)
+uv = PackedVector2Array(-224, -64, -224, 32, -216, 32, -216, -64)
 
 [node name="Ball" type="Node2D" parent="." unique_id=527015713]
 position = Vector2(551, 346)
