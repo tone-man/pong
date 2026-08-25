@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://capholwcf4565"]
 
+[ext_resource type="Script" uid="uid://cmshdi7u4hum2" path="res://Ball.cs" id="1_ulcgi"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ajmcq"]
 size = Vector2(8, 112)
 
@@ -25,6 +27,7 @@ uv = PackedVector2Array(-224, -64, -224, 32, -216, 32, -216, -64)
 
 [node name="Ball" type="Node2D" parent="." unique_id=527015713]
 position = Vector2(574, 320)
+script = ExtResource("1_ulcgi")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Ball" unique_id=1947014313]
 visible = false
