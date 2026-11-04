@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bd4c0awdmmgng"]
+
+[node name="Scene" type="Node2D" unique_id=799994757]
+
+[node name="Arena" type="Node2D" parent="." unique_id=1706400409]
+
+[node name="Paddle" type="Node2D" parent="." unique_id=23860233]
+
+[node name="Ball" type="Node2D" parent="." unique_id=1479558371]
